@@ -1,0 +1,30 @@
+{
+    "name": "juizmill/vistasoft",
+    "description": "Biblioteca para consumir API http://www.vistasoft.com.br/api/",
+    "type": "library",
+    "authors": [
+        {
+          "name": "Jesus Vieira",
+          "email": "jesusvieiradelima@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "zendframework/zend-http": "^2.8"
+    },
+    "require-dev": {
+        "php": ">=5.5",
+        "phpunit/phpunit": "7.1.5",
+        "mockery/mockery": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "API\\Vistasoft\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "API\\Vistasoft\\Tests\\": "tests/"
+        }
+    }
+}
