@@ -21,7 +21,9 @@ abstract class AbstractRequest implements RequestInterface
     {
         $url = sprintf(
             '%s/%s/%s',
-            $this->connect->getUrl(), $this->getType(), $endpoint
+            $this->connect->getUrl(),
+            $this->getType(),
+            $endpoint
         );
 
         $this->client->setHeaders(['Accept' => 'application/json']);

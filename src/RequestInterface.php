@@ -8,5 +8,4 @@ interface RequestInterface
 {
     public function __construct(ConnectInterface $connect, ZendClient $client);
     public function request($endpoint, $params = [], $method = 'POST') : array;
-
 }
