@@ -2,7 +2,6 @@
 
 namespace API\Vistasoft;
 
-
 interface ConnectInterface
 {
     public function setKey(string $key);

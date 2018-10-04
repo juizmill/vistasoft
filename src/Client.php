@@ -2,7 +2,6 @@
 
 namespace API\Vistasoft;
 
-
 class Client extends AbstractRequest
 {
     const TYPE = 'clientes';

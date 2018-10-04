@@ -8,7 +8,6 @@ use API\Vistasoft\Connect;
 use Zend\Http\Client as ZendClient;
 use Zend\Http\Request;
 
-
 $connect = new Connect(null, 'c9fdd79584fb8d369a6a579af1a8f681');
 $connect->isSandbox(true);
 
@@ -59,7 +58,7 @@ $client->setFields('pesquisa', [
         'quantidade' => 10
     ]
 ]);
-$result = $client->request('listar', ['showtotal' => 1],Request::METHOD_GET);
+$result = $client->request('listar', ['showtotal' => 1], Request::METHOD_GET);
 
 echo "\nResult 2\n\n";
 print_r($result);
